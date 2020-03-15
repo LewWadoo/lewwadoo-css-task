@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'barlowregular';
+    src: url('Barlow-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background-color: #EFF6FF;
+    font-family: "barlowregular";
+}
+
+button {
+    font-size: 15px;
+    font-weight: normal;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    box-sizing: content-box;
+    color: #EEEEEE;
+    text-align: center;
+    border-width: 0;
+}
+
+.common-rectangle {
+    width: 280px;
+    height: 20px;
+
+}
+
+.left {
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: 70px;
+    margin-top: 100px;
+    background-image: url("../img/bg.jpg");
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: 900px;
+    width: 1800px;
+    height: 1200px;
+}
+
+.right {
+    margin-left: 1000px;
+    background-color: #FFFFFF;
+    width: 800px;
+}
+
+.logo {
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 8%;
+}
+
+.button-image {
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position-y: center;
+    background-position-x: left;
+    background-position-x: 15px;
+}
+
+.fb {
+    background-color: #255A9B;
+    background-image: url("../img/facebook.svg");
+    margin-right: 40px;
+}
+
+.in {
+    background-color: #0076B6;
+    background-image: url("../img/linkedin.svg");
+    margin-right: 0px;
+}
+
+.button {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3698FB;
+    border-radius: 5px;
+}
+
+.topmost {
+    font-size: 34px;
+    font-weight: bold;
+    color: #2a4a5c;
+}
+
+.topmost-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #96a5b1;
+    margin-bottom: 70px;
+}
+
+.label-input-box {
+    position: relative;
+    left: 55px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #96a5b1;
+}
+
+.input-box {
+    height: 50px;
+    color: #2a4a5c;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: top;
+    text-align: start;
+    /* left: -40px; */
+}
+
+.investor-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #7b8a92;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.investor-subtitle {
+    font-size: 17px;
+    font-weight: bold;
+    color: #96a5b1;
+    margin-bottom: 50px;
+}
+
+.label-investor {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a4a5c;
+    margin-right: 50px;
+}
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+    width: 280px;
+    left: 0;
+    top: 30px;
+    color: #afafaf;
+    font-size: 16px;
+    padding: 1em;
+    box-shadow: 10px 15px 5px  #EEEEEE;
+    line-height: 1.5em;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    top: 2em;
+}
+
+.terms {
+    font-size: 14px;
+    font-weight: normal;
+    color: #2a4a5c;
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+.strike {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2a4a5c;
+}
+
+.strike span {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+}
+
+.strike span::before,
+.strike span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+.strike span::before {
+    right: 100%;
+    margin-right: 10px;
+}
+
+.strike span::after {
+    left: 100%;
+    margin-left: 10px;
+}
