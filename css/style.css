@@ -161,6 +161,45 @@ button {
     opacity: 1;
     top: 2em;
 }
+.checkbox-hidden {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.check {
+    padding-left: 1.2em;
+}
+
+.checkbox {
+    position: absolute;
+    margin-left: -1.2em;
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    background: url("../img/checkbox.svg") no-repeat;
+    background-size: contain;
+}
+
+.checkbox-hidden:checked + .checkbox {
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.checkbox-hidden:focus + .checkbox {
+    background-image: url("../img/checkbox-focused.svg");
+}
+
+.checkbox-hidden:focus:checked + .checkbox {
+    background-image: url("../img/checkbox-on-focused.svg");
+}
+
+.checkbox-hidden:disabled + .checkbox {
+    background-image: url("../img/checkbox-disabled.svg");
+}
+
+.checkbox-hidden:disabled:checked + .checkbox {
+    background-image: url("../img/checkbox-on-disabled.svg");
+}
 
 .terms {
     font-size: 14px;
